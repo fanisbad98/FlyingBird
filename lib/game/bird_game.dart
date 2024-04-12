@@ -16,6 +16,7 @@ class BirdGame extends FlameGame with TapDetector, HasCollisionDetection{
   Timer interval = Timer(Config.pipeInterval, repeat: true);
   bool isHit = false;
   late TextComponent score; 
+
   @override 
   Future<void> onLoad() async {
     addAll([

@@ -74,8 +74,7 @@ class Bird extends SpriteGroupComponent<BirdMovement> with HasGameRef<BirdGame>,
     position = Vector2(50, gameRef.size.y / 2 - size.y / 2);
     score = 0;
   }
-
-
+ 
 
   void gameOver() {
     FlameAudio.play(Assets.collision);
